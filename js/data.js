@@ -169,7 +169,7 @@ window.portfolioData = {
       image: "./assets/images/project-busondan-poster.png",
       imageBackground: "#2875f5",
       detailImages: ["./assets/images/busondan-detail-overview.png"],
-      tech: ["React", "React Native", "JavaScript", "Spring Boot", "Java", "Python", "Kotlin", "Docker"],
+      tech: ["React", "React Native", "JavaScript", "Spring Boot", "Java", "Python", "Kotlin", "Redis", "Docker"],
       period: "2025.10 — 2025.11",
       role: "Frontend",
       people: "3명",
@@ -245,7 +245,7 @@ window.portfolioData = {
     {
       id: "tikitaka",
       type: "WEB",
-      title: "Tikitaka",
+      title: "tikitaka",
       summary: "강의 자료와 질문을 연결해 수업 참여와 복습을 돕는 학습 플랫폼입니다. AI가 질문의 강의 관련 여부와 카테고리를 분류하고, 저장된 임베딩을 PostgreSQL pgvector로 비교해 같은 자료·카테고리 안의 유사 질문을 찾아줍니다.",
       image: "./assets/images/tikitaka-detail-dashboard.png",
       detailImages: [
@@ -254,13 +254,13 @@ window.portfolioData = {
         "./assets/images/tikitaka-detail-questions.png",
         "./assets/images/tikitaka-detail-answer.png"
       ],
-      tech: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "Redis", "FastAPI", "OpenAI API", "Sentence Transformers", "paraphrase-multilingual-mpnet-base-v2", "Docker", "AWS EC2", "Cloudflare"],
+      tech: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "FastAPI", "OpenAI API", "Sentence Transformers", "paraphrase-multilingual-mpnet-base-v2", "Docker", "AWS EC2", "AWS S3", "Cloudflare"],
       period: "2026.03 — Present",
       role: "Backend · AI",
       people: "4명",
       detail: "Spring Boot API와 AI 질문 분류·유사 질문 탐색 기능을 구현했으며, 프론트엔드는 Cloudflare 환경에 배포했습니다.",
       functionIntro: [
-        "Tikitaka는 단순히 강의자료를 저장하는 서비스가 아니라, 강의 Space 안에서 자료·필기·질문·답변이 하나의 흐름으로 이어지는 학습 환경을 만드는 프로젝트입니다.",
+        "tikitaka는 단순히 강의자료를 저장하는 서비스가 아니라, 강의 Space 안에서 자료·필기·질문·답변이 하나의 흐름으로 이어지는 학습 환경을 만드는 프로젝트입니다.",
         "백엔드 개발자로 참여해 강의 Space와 멤버·권한 관리, 질문 데이터 흐름과 AI 서버 연동, Web Push 알림 등 서비스의 주요 백엔드 기능을 구현했습니다."
       ],
       sections: [
@@ -299,7 +299,7 @@ window.portfolioData = {
         {
           title: "3. Web Push — 서비스 밖에서도 중요한 강의 이벤트 전달",
           paragraphs: [
-            "기존 알림은 사용자가 Tikitaka 화면에 들어와야 확인할 수 있었기 때문에, 공지나 강의자료 등록과 같은 이벤트를 놓칠 수 있었습니다.",
+            "기존 알림은 사용자가 tikitaka 화면에 들어와야 확인할 수 있었기 때문에, 공지나 강의자료 등록과 같은 이벤트를 놓칠 수 있었습니다.",
             "기존 Notification 저장 구조는 유지하면서 Web Push를 별도 전달 채널로 추가했습니다."
           ],
           bullets: [
@@ -350,7 +350,7 @@ window.portfolioData = {
                 title: "원인",
                 paragraphs: [
                   "분류 모델의 출력은 외부 AI 호출의 결과이므로 요청 시 전달한 실제 카테고리 후보와 항상 일치한다고 가정할 수 없습니다. 또한 같은 카테고리가 반복해서 반환될 수 있습니다.",
-                  "Tikitaka에서는 AI 서버가 후보 ID 집합과 대조해 유효하지 않은 ID를 버리고, 중복 결과를 정리한 뒤 confidence와 함께 반환합니다. COURSE_RELATED인데 유효한 카테고리가 하나도 없으면 빈 분류를 정상 결과로 저장하지 않고 오류로 처리합니다."
+                  "tikitaka에서는 AI 서버가 후보 ID 집합과 대조해 유효하지 않은 ID를 버리고, 중복 결과를 정리한 뒤 confidence와 함께 반환합니다. COURSE_RELATED인데 유효한 카테고리가 하나도 없으면 빈 분류를 정상 결과로 저장하지 않고 오류로 처리합니다."
                 ]
               },
               {
@@ -668,7 +668,7 @@ window.portfolioData = {
     { type: "WEB APP", title: "MCMOMENTS", subtitle: "첫 구매의 순간과 이야기를 AI 아트워크로 간직하고, 다음 컬렉션을 발견하는 디지털 다이어리", id: "mcm-moments" },
     { type: "WEB APP", title: "버스온단", subtitle: "통학길에 필요한 캠퍼스 버스·지하철 도착 정보를 한눈에 확인하는 서비스", id: "busondan" },
     { type: "PWA", title: "HAB-EAT", subtitle: "AI 음식 인식과 영양 기록으로 건강한 식습관 형성을 돕는 서비스", id: "habeat" },
-    { type: "WEB", title: "TIKITAKA", subtitle: "강의 중 질문과 필기를 연결하고, AI 질문 분류와 유사 질문 탐색으로 수업 참여와 복습을 돕는 학습 플랫폼", id: "tikitaka" },
+    { type: "WEB", title: "tikitaka", subtitle: "강의 중 질문과 필기를 연결하고, AI 질문 분류와 유사 질문 탐색으로 수업 참여와 복습을 돕는 학습 플랫폼", id: "tikitaka" },
     { type: "WEB", title: "프로젝트 우당탕탕", subtitle: "지역의 프로젝트 의뢰부터 참여·운영·기록까지 연결하는 협업 플랫폼", id: "udangtang" }
   ],
   contacts: { email: "ycl0514@naver.com", github: "https://github.com/chae-ring", linkedin: "https://www.linkedin.com/", formEndpoint: "https://formsubmit.co/ycl0514@naver.com" }

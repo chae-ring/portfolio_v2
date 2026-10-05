@@ -91,7 +91,7 @@ def replace_by_position(slide_number: int, shapes: list[ET.Element]) -> None:
             (7.53, 5.65): "실시간 통학 정보 통합 서비스",
             (13.51, 4.78): "Hab-eat",
             (13.54, 5.64): "AI 음식 인식 기반 식단 관리",
-            (1.54, 7.58): "Tikitaka",
+            (1.54, 7.58): "tikitaka",
             (1.54, 8.44): "AI 질문 그룹화 학습 플랫폼",
             (7.53, 7.58): "프로젝트 우당탕탕",
             (7.53, 8.44): "지역 프로젝트 운영 플랫폼",
@@ -156,7 +156,7 @@ def replace_by_position(slide_number: int, shapes: list[ET.Element]) -> None:
             (2.69, 4.64): "AI\nFLOW",
         },
         10: {
-            (1.88, 1.43): "PROJECT 04 | Tikitaka\nAI 질문 그룹화 기반 학습 아카이빙 플랫폼",
+            (1.88, 1.43): "PROJECT 04 | tikitaka\nAI 질문 그룹화 기반 학습 아카이빙 플랫폼",
             (1.29, 4.33): "강의자료·필기·질문·답변을 하나의 Space 흐름으로 연결하고,\nAI가 유사 질문을 그룹화해 수업과 복습을 돕는 플랫폼입니다.",
             (1.49, 3.43): "Backend · AI",
             (4.64, 3.58): "기간 : 2026.03–Present  |  역할 : Backend · AI  |  4명",
