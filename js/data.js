@@ -240,7 +240,7 @@ window.portfolioData = {
           }
         ]
       },
-      links: { github: "https://github.com/chae-ring/BusOnDan" }
+      links: { github: "https://github.com/chae-ring/busondan_dku" }
     },
     {
       id: "tikitaka",
