@@ -1,0 +1,38 @@
+#about .about-grid {
+  margin-top: 100px;
+}
+
+#about .skill-group li {
+  padding: 7px 15px;
+  font-size: 12px;
+}
+
+#about .profile-list > div:last-child {
+  border-bottom: 0;
+}
+
+#about .profile-list > div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#about .section-label {
+  margin-bottom: 12px;
+}
+
+#about .skills {
+  transform: translate(50px, 30px);
+}
+
+/* Keep all section headings below Home at one visual scale. */
+#about .display-title,
+#experience .display-title,
+#projects .display-title,
+#contact .display-title {
+  font-size: clamp(56px, 5.6vw, 84px);
+}
+
+@media (max-width: 760px) {
+  #about .about-grid { margin-top: 56px; }
+  #about .skills { transform: none; }
+}

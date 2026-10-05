@@ -1,0 +1,44 @@
+.archive-card[data-project-id="habeat"] {
+  background: #f8f8f8 url("../assets/images/project-habeat-cover.png") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="busondan"] {
+  background: #2877ef url("../assets/images/project-busondan-cover.jpg") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="mcm-moments"] {
+  background: #f3ead3 url("../assets/images/project-mcm-moments-cover.png") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="tikitaka"] {
+  background: #7178df url("../assets/images/project-tikitaka-cover.jpg") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="udangtang"] {
+  background: #f5eddf url("../assets/images/project-udangtang-cover.png") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="habeat"]::before,
+.archive-card[data-project-id="busondan"]::before,
+.archive-card[data-project-id="mcm-moments"]::before,
+.archive-card[data-project-id="tikitaka"]::before,
+.archive-card[data-project-id="udangtang"]::before {
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.archive-card[data-project-id="habeat"] .archive-content,
+.archive-card[data-project-id="busondan"] .archive-content,
+.archive-card[data-project-id="mcm-moments"] .archive-content,
+.archive-card[data-project-id="tikitaka"] .archive-content,
+.archive-card[data-project-id="udangtang"] .archive-content {
+  padding: 0;
+  background: transparent;
+}
+
+.archive-card[data-project-id="habeat"] .archive-content p,
+.archive-card[data-project-id="busondan"] .archive-content p,
+.archive-card[data-project-id="mcm-moments"] .archive-content p,
+.archive-card[data-project-id="tikitaka"] .archive-content p,
+.archive-card[data-project-id="udangtang"] .archive-content p {
+  color: #f2f2ef;
+}

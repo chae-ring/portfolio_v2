@@ -1,0 +1,86 @@
+.project-visual {
+  width: 88%;
+  justify-self: start;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+}
+
+.project-card {
+  scroll-margin-top: 140px;
+}
+
+#projects > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .all-projects {
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 190px;
+}
+
+.project-visual img {
+  width: 92%;
+  height: 64%;
+  max-height: none;
+  aspect-ratio: 7 / 5;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #080808;
+}
+
+.project-visual .project-cover-video {
+  width: 86%;
+  height: 58%;
+  aspect-ratio: 7 / 5;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #080808;
+  box-shadow: 0 18px 30px #0004;
+}
+
+.project-detail-button {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.github-link svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+@media (max-width: 760px) {
+  .project-visual { width: 100%; min-height: 0; }
+  #projects .all-projects { margin-bottom: 100px; }
+}

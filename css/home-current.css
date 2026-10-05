@@ -1,0 +1,26 @@
+/* Current activity panel details */
+.now-card {
+  position: relative;
+  border-left: 0;
+}
+
+.now-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(217, 245, 109, .35) 12%,
+    var(--accent) 46%,
+    rgba(217, 245, 109, .35) 82%,
+    transparent 100%
+  );
+}
+
+.now-card .rule {
+  background: rgba(237, 241, 239, .72);
+}

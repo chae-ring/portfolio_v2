@@ -1,0 +1,21 @@
+.contact-form .button {
+  min-width: 140px;
+  padding: 14px 22px;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.contact-socials a {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 0;
+  color: var(--accent);
+}
+
+.contact-socials svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}

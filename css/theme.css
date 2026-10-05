@@ -1,0 +1,5 @@
+/* Site-wide visual tokens and theme overrides. */
+.about,
+.projects {
+  background: var(--bg);
+}
