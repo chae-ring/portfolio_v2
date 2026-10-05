@@ -11,11 +11,8 @@
   $('[data-bind="email"]').textContent = data.contacts.email;
   $$('[data-social]').forEach((node) => { node.href = data.contacts[node.dataset.social] || '#'; });
   const contactGithub = $('.contact-socials [data-social="github"]');
-  const contactLinkedin = $('.contact-socials [data-social="linkedin"]');
   contactGithub.setAttribute('aria-label', 'GitHub');
   contactGithub.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.51 2.87 8.34 6.84 9.69.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.27 9.27 0 0 1 12 6.94c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.23 10.23 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" /></svg>';
-  contactLinkedin.setAttribute('aria-label', 'LinkedIn');
-  contactLinkedin.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 1 0 5.24 6.94 1.97 1.97 0 0 0 5.25 3ZM20.44 13.4c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.38v-5.7c0-1.5.28-2.95 2.14-2.95 1.83 0 1.85 1.72 1.85 3.05V20h3.37v-6.6h.34Z" /></svg>';
   $('[data-list="focus"]').innerHTML = data.focus.map((item) => `<li>${item}</li>`).join('');
   $('[data-list="profile"]').innerHTML = data.profile.map(([label, value]) => {
     const content = label === 'GITHUB'
