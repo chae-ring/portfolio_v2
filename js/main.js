@@ -86,10 +86,12 @@
       card.style.setProperty('--ry', `${offset * -21}deg`);
       card.style.setProperty('--rz', `${offset * 4}deg`);
       card.style.setProperty('--scale', `${1 - distance * .105}`);
-      card.style.setProperty('--opacity', `${1 - distance * .21}`);
+      card.style.setProperty('--opacity', `${distance <= 2 ? 1 - distance * .21 : 0}`);
       card.style.setProperty('--brightness', `${1 - distance * .2}`);
       card.style.setProperty('--order', `${10 - distance}`);
       card.classList.toggle('active', offset === 0);
+      card.inert = distance > 2;
+      card.setAttribute('aria-hidden', String(distance > 2));
       card.setAttribute('aria-label', `${archiveProjects[index].title} ${offset === 0 ? '프로젝트 상세 보기' : '카드 선택'}`);
     });
     $$('[data-carousel-index]', carouselDots).forEach((dot, index) => dot.classList.toggle('active', index === activeArchive));

@@ -15,7 +15,11 @@
 }
 
 .archive-card[data-project-id="udangtang"] {
-  background: #f5eddf url("../assets/images/project-udangtang-cover.png") center / contain no-repeat;
+  background: #f5eddf url("../assets/images/project-udangtang-map.png") center / contain no-repeat;
+}
+
+.archive-card[data-project-id="bluffing"] {
+  background: #8957d8 url("../assets/images/project-bluffing-poster.png") center 22% / 100% auto no-repeat;
 }
 
 .archive-card[data-project-id="habeat"]::before,
@@ -23,6 +27,10 @@
 .archive-card[data-project-id="mcm-moments"]::before,
 .archive-card[data-project-id="tikitaka"]::before,
 .archive-card[data-project-id="udangtang"]::before {
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.archive-card[data-project-id="bluffing"]::before {
   background: rgba(0, 0, 0, 0.58);
 }
 
@@ -35,10 +43,19 @@
   background: transparent;
 }
 
+.archive-card[data-project-id="bluffing"] .archive-content {
+  padding: 0;
+  background: transparent;
+}
+
 .archive-card[data-project-id="habeat"] .archive-content p,
 .archive-card[data-project-id="busondan"] .archive-content p,
 .archive-card[data-project-id="mcm-moments"] .archive-content p,
 .archive-card[data-project-id="tikitaka"] .archive-content p,
 .archive-card[data-project-id="udangtang"] .archive-content p {
+  color: #f2f2ef;
+}
+
+.archive-card[data-project-id="bluffing"] .archive-content p {
   color: #f2f2ef;
 }

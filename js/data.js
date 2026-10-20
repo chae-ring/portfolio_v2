@@ -1,13 +1,13 @@
 /* 이 파일의 데이터만 수정하면 포트폴리오 전체 콘텐츠를 갱신할 수 있습니다. */
 window.portfolioData = {
-  intro: "사용자 경험을 중심에 두고, 기능 구현을 넘어 안정적인 서비스 흐름을\n만드는 백엔드 개발자입니다.",
+  intro: "실시간 메시지의 중복·누락 원인을 찾아 전송과 저장의 경계를 나누고, 복구 흐름까지 구현해 온 백엔드 개발자입니다.",
   currentRole: "현장실습 - Developer",
   currentCompany: "@ 시선아이티",
   currentPeriod: "2026.07 — Present",
   focus: ["Spring Boot", "Java", "PostgreSQL", "eGovFrame", "SVN", "GIS"],
   profile: [["NAME", "여채린"], ["SCHOOL", "단국대학교 컴퓨터공학과"], ["BIRTH", "2003.05.14"], ["EMAIL", "ycl0514@naver.com"], ["GITHUB", "github.com/chae-ring"]],
   skills: [
-    { title: "BACKEND", items: ["Java", "Spring Boot", "JPA", "NestJS"] },
+    { title: "BACKEND", items: ["Java", "Spring Boot", "Spring WebSocket", "STOMP", "HTTP", "JPA", "NestJS"] },
     { title: "DATABASE & INFRA", items: ["MySQL", "PostgreSQL", "Redis", "Docker", "AWS"] },
     { title: "FRONTEND / WEB", items: ["TypeScript", "React", "JSP", "HTML/CSS"] }
   ],
@@ -32,9 +32,9 @@ window.portfolioData = {
     },
     {
       id: "goormthon-univ", title: "구름톤UNIV 4기", company: "구름톤UNIV 4기 백엔드 개발", period: "Mar 2025 — Sep 2025",
-      description: "교내 FAIL 세미나에서 배움과 실패 경험을 나누고, 연합 스터디로 Docker·Kubernetes를 학습했습니다. 시즌톤에서는 BE 팀장으로 세대 간 소통을 돕는 익명 토론 게임 ‘블러핑’을 개발했습니다.",
-      highlights: ["교내 FAIL 세미나에서 개발 과정의 실패와 배운 점을 공유하고, 구성원들의 경험을 함께 돌아보는 자리 마련", "연합 스터디에서 Docker와 Kubernetes의 핵심 개념을 학습하며 컨테이너 기반 배포·오케스트레이션 이해 확장", "시즌톤 ‘블러핑’ BE 팀장으로 세대별 사용자를 자동 매칭하고 익명 실시간 토론을 진행하는 서비스 백엔드 개발", "기획·프론트엔드 파트와 기능 및 데이터 흐름을 조율해 세대 간 관점 차이를 게임으로 풀어내는 서비스 구현"],
-      skills: ["Java·Spring Boot", "백엔드 개발", "Docker", "Kubernetes 기초", "API·데이터 설계", "팀 리딩·파트 협업"]
+      description: "교내 FAIL 세미나에서 배움과 실패 경험을 나누고, 연합 스터디로 Docker·Kubernetes를 학습했습니다. 시즌톤에서는 BE 팀장으로 Bluffing의 실시간 채팅·투표 백엔드를 구현했습니다.",
+      highlights: ["교내 FAIL 세미나에서 개발 과정의 실패와 배운 점을 공유하고, 구성원들의 경험을 함께 돌아보는 자리 마련", "연합 스터디에서 Docker와 Kubernetes의 핵심 개념을 학습하며 컨테이너 기반 배포·오케스트레이션 이해 확장", "Bluffing BE 팀장으로 STOMP WebSocket·JWT 연결 인증, 사용자 매칭 대기열, 게임 단계 타이머를 구현", "기획·프론트엔드 파트와 기능 및 데이터 흐름을 조율해 세대 간 대화와 투표를 연결하는 실시간 서비스 구현"],
+      skills: ["Java·Spring Boot", "Spring WebSocket·STOMP", "JWT", "매칭 대기열·비동기 처리", "Docker", "Kubernetes 기초", "팀 리딩·파트 협업"]
     },
     {
       id: "taba", title: "TMAX ACADEMY TABA 6기", company: "TABA 6기 개발 교육 및 팀 프로젝트", period: "Sep 2024 — Dec 2024",
@@ -110,6 +110,7 @@ window.portfolioData = {
         }
       ],
       troubleshooting: {
+        description: "로그인·등록 흐름에서 검증 순서가 오류 안내를 어떻게 바꾸는지, 브라우저의 이미지 요청 방식에 맞춰 인증 범위를 어떻게 나눴는지 정리했습니다.",
         items: [
           {
             title: "1. 이미 등록한 시리얼이 모두 같은 오류로 보이던 문제",
@@ -212,6 +213,7 @@ window.portfolioData = {
         }
       ],
       troubleshooting: {
+        description: "외부 실시간 API의 응답이 비어도 도착 정보가 통째로 사라지지 않도록, 저장된 운행 기록으로 누락된 구간을 보완한 사례입니다.",
         items: [
           {
             title: "1. 실시간 교통정보가 누락되면 도착 정보 자체가 사라지던 문제",
@@ -254,14 +256,14 @@ window.portfolioData = {
         "./assets/images/tikitaka-detail-questions.png",
         "./assets/images/tikitaka-detail-answer.png"
       ],
-      tech: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "FastAPI", "OpenAI API", "Sentence Transformers", "paraphrase-multilingual-mpnet-base-v2", "Docker", "AWS EC2", "AWS S3", "Cloudflare"],
+      tech: ["Java", "Spring Boot", "Spring WebSocket", "Redis", "PostgreSQL", "pgvector", "FastAPI", "OpenAI API", "Sentence Transformers", "Docker", "AWS EC2", "AWS S3", "Cloudflare"],
       period: "2026.03 — Present",
       role: "Backend · AI",
       people: "4명",
-      detail: "Spring Boot API와 AI 질문 분류·유사 질문 탐색 기능을 구현했으며, 프론트엔드는 Cloudflare 환경에 배포했습니다.",
+      detail: "Spring Boot API와 AI 질문 분류·유사 질문 탐색 기능을 구현했으며, Web Push의 HTTPS 동작을 확인하기 위해 백엔드를 Cloudflare 임시 환경에 올려 테스트했습니다.",
       functionIntro: [
         "tikitaka는 단순히 강의자료를 저장하는 서비스가 아니라, 강의 Space 안에서 자료·필기·질문·답변이 하나의 흐름으로 이어지는 학습 환경을 만드는 프로젝트입니다.",
-        "백엔드 개발자로 참여해 강의 Space와 멤버·권한 관리, 질문 데이터 흐름과 AI 서버 연동, Web Push 알림 등 서비스의 주요 백엔드 기능을 구현했습니다."
+        "백엔드 개발자로 참여해 Space와 멤버 권한, AI 질문 분류, 실시간 질문·공유 필기 메시지, Web Push를 구현했습니다. WebSocket 메시지를 DB에 중복 저장하던 문제를 전송과 영속화 역할을 분리해 해결하고, ACK·재동기화 흐름으로 누락된 필기를 복구하도록 보완했습니다."
       ],
       sections: [
         {
@@ -309,10 +311,36 @@ window.portfolioData = {
             "Notification 생성 시 등록된 구독 정보를 이용해 Web Push 발송",
             "기존 서비스 내부 알림과 브라우저 시스템 알림을 분리해 관리"
           ],
+          subsections: [
+            {
+              title: "HTTPS 테스트 환경 — Cloudflare 임시 도메인 활용",
+              paragraphs: [
+                "브라우저 Web Push와 서비스 워커는 HTTPS 같은 보안 컨텍스트가 필요합니다. localhost는 개발용 예외지만 원격 HTTP 주소에서는 실제 구독 흐름을 확인할 수 없어 HTTPS 테스트 환경이 필요했습니다.",
+                "백엔드를 Cloudflare 임시 HTTPS 환경에 올려 서비스 워커 기반 구독 요청과 Push 발송을 포함한 흐름을 테스트했습니다."
+              ],
+              closing: "HTTPS 환경을 갖춰 브라우저의 보안 조건과 Web Push 흐름을 함께 확인했습니다."
+            }
+          ],
           closing: "기존 Notification 기능을 교체하지 않고 서비스 내부 알림 저장과 외부 Push 전달의 역할을 분리해 기존 기능에 영향을 최소화했습니다."
+        },
+        {
+          title: "4. 실시간 공유 필기 — 순서 보장과 누락 복구",
+          paragraphs: [
+            "교수자의 공유 필기를 WebSocket STOMP로 해당 Space와 슬라이드 구독자에게 전달합니다. 연결에는 JWT를 사용하고, 서버가 슬라이드별 strokeSeq를 부여해 메시지 순서를 확인할 수 있게 했습니다.",
+            "클라이언트 ACK와 재동기화 요청을 받아 마지막으로 수신한 sequence 이후의 필기를 Redis에서 먼저 찾고, 없으면 DB에서 조회해 다시 전송합니다. Redis의 실시간 필기 보관에는 24시간 만료를 설정했습니다.",
+            "ACK·재동기화 처리 정보와 Redis 오류를 로그로 남겨 전송 누락과 복구 경로를 확인할 수 있도록 했습니다."
+          ],
+          bullets: [
+            "WebSocket으로 실시간 필기를 브로드캐스트하고 Redis에 복구용 이벤트 보관",
+            "strokeSeq와 ACK로 클라이언트의 마지막 수신 위치 추적",
+            "재동기화 요청 시 Redis 조회 후 DB 조회로 누락 이벤트 복구",
+            "완료된 필기의 DB 저장은 REST API가 담당하고 WebSocket은 전송을 담당"
+          ],
+          closing: "메시지 전송, 임시 복구 데이터, 영속 저장의 책임을 나눠 실시간 반영과 재접속 복구를 함께 처리했습니다."
         }
       ],
       troubleshooting: {
+        description: "WebSocket과 REST가 같은 필기를 중복 저장하던 원인을 전송·영속화 책임 분리로 해결하고, ACK·재동기화로 누락 복구를 보완했습니다. 질문·AI 분류 경계도 서버에서 검증했습니다.",
         items: [
           {
             title: "1. Space 밖의 카테고리로 질문을 필터링할 수 있던 문제",
@@ -360,6 +388,28 @@ window.portfolioData = {
                   "정규화 결과는 confidence 순으로 반환되며 백엔드가 기준 미달 카테고리를 걸러냅니다. AI 서버가 COURSE_RELATED 질문에 유효한 카테고리를 반환하지 못한 경우에도 상태를 성공으로 덮어쓰지 않고 분류 실패 경로로 처리하도록 구성했습니다."
                 ],
                 closing: "모델 응답을 신뢰해 바로 저장하지 않고, 요청 후보와의 일치·중복·confidence를 서비스 경계에서 확인해 AI 분류 결과가 실제 강의 카테고리 범위 안에서만 사용되도록 했습니다."
+              }
+            ]
+          },
+          {
+            title: "3. WebSocket 필기와 REST 저장이 같은 필기를 중복 저장하던 문제",
+            paragraphs: [
+              "공유 필기는 WebSocket으로 실시간 전달하고 REST API로 DB에 저장하는 흐름이었습니다. 수정 이력과 코드 주석에는 WebSocket 수신 처리에서도 DB 저장을 수행해, REST 저장과 겹치며 필기가 중복되는 문제가 기록되어 있습니다."
+            ],
+            subsections: [
+              {
+                title: "원인",
+                paragraphs: [
+                  "WebSocket 수신 로직이 실시간 브로드캐스트뿐 아니라 DB 저장까지 맡고 있었습니다. 같은 사용자 입력을 REST 저장 요청도 처리하면서 하나의 필기가 두 번 영속화될 수 있었습니다."
+                ]
+              },
+              {
+                title: "해결",
+                paragraphs: [
+                  "WebSocket 처리는 입력 필기의 검증, sequence 부여, Redis 임시 보관, 브로드캐스트를 담당하도록 바꾸고 DB 저장은 REST API 한 경로로 모았습니다.",
+                  "재접속 중 빠진 메시지는 마지막 수신 sequence 이후의 이벤트를 Redis에서 먼저 조회하고, Redis에 없으면 DB에서 찾아 재전송하도록 구성했습니다."
+                ],
+                closing: "중복 저장의 원인이었던 책임 중복을 없애고, sequence·ACK·재동기화로 누락을 복구하는 흐름을 함께 마련했습니다."
               }
             ]
           }
@@ -535,7 +585,8 @@ window.portfolioData = {
       type: "PWA",
       title: "Hab-eat",
       summary: "음식 사진에서 AI가 음식명을 인식해 영양 정보와 식단 기록으로 연결하는 건강 관리 서비스입니다. 인식 결과를 직접 검색해 보정할 수도 있고, 기록을 날짜별 영양 통계와 건강 챌린지로 이어 꾸준한 식습관 관리를 돕습니다.",
-      image: "./assets/images/project-habeat-poster.jpg",
+      image: "./assets/images/project-habeat-poster.png",
+      detailImage: "./assets/images/project-habeat-intro.png",
       tech: ["NestJS", "TypeScript", "MySQL", "FastAPI", "YOLOv11", "Docker", "AWS", "Prisma", "PyTorch", "OpenCV", "Nginx"],
       period: "2024.10 — 2024.12",
       role: "Backend",
@@ -662,6 +713,109 @@ window.portfolioData = {
         ]
       },
       links: { github: "https://github.com/6billion" }
+    },
+    {
+      id: "bluffing",
+      type: "WEB APP",
+      title: "Bluffing",
+      summary: "마피아 게임 규칙을 활용해 세대 간 대화와 투표를 연결하는 실시간 소통 서비스입니다. STOMP WebSocket 메시지 처리, 사용자 매칭, 방별 게임 단계 전환을 맡았습니다.",
+      image: "./assets/images/project-bluffing-mockup.png",
+      detailImage: "./assets/images/project-bluffing-mockup.png",
+      tech: ["Java", "Spring Boot", "Spring WebSocket", "STOMP", "Spring Security", "JWT", "MySQL"],
+      period: "2025.03 — 2025.09",
+      role: "Backend Team Lead",
+      people: "6명",
+      detail: "구름톤UNIV 시즌톤 프로젝트의 백엔드 팀장으로 매칭·실시간 게임 서버 기능을 구현하고 백엔드 작업을 맡았습니다.",
+      functionIntro: [
+        "구름톤UNIV 시즌톤에서 백엔드 팀장으로 참여해 플레이어가 매칭된 뒤 채팅·투표·결과 확인까지 이어지는 게임 서버 흐름을 구현했습니다. 맡은 서버 기능을 메시지 전달 경로와 방 상태 전이 기준으로 나눠 개발했습니다.",
+        "실시간 통신은 Spring WebSocket과 STOMP를 사용했습니다. 방 전체 이벤트와 사용자 개인 알림을 구분하고, JWT로 STOMP 연결을 인증했습니다."
+      ],
+      sections: [
+        {
+          title: "1. STOMP 메시지 흐름 — 방 브로드캐스트와 개인 알림 분리",
+          paragraphs: [
+            "클라이언트의 매칭 요청과 채팅 메시지를 STOMP 애플리케이션 경로로 받고, 서버에서 방별 이벤트는 topic으로, 매칭 결과는 사용자별 queue로 전달하도록 나눴습니다.",
+            "STOMP CONNECT에서 Authorization Bearer JWT를 확인해 사용자 ID를 Principal로 설정하고, 개인 메시지를 사용자 목적지로 보냈습니다."
+          ],
+          bullets: [
+            "WebSocket 엔드포인트 /ws와 STOMP 메시지 브로커 구성",
+            "클라이언트→서버 요청 경로와 서버→클라이언트 구독 경로 분리",
+            "게임 방 topic 브로드캐스트와 사용자별 매칭 알림 queue 구분",
+            "STOMP 연결 시 JWT를 검증하고 인증된 사용자 ID를 연결 정보로 사용"
+          ],
+          closing: "메시지가 어디서 들어오고 누구에게 전달되는지 경로를 나눠, 방 단위 이벤트와 개인별 결과 알림을 구분했습니다."
+        },
+        {
+          title: "2. 매칭 대기열 — 조건별 대기 사용자를 방으로 연결",
+          paragraphs: [
+            "매칭 유형별 대기열에 사용자를 넣고, 같은 유형의 대기 사용자가 방 생성 조건을 충족하면 ChatRoom과 사용자별 게임 정보를 생성합니다.",
+            "이미 대기열에 있는 사용자의 중복 등록을 확인하고, 매칭이 완료되면 각 사용자에게 방 번호·팀·상대 연령대 정보를 개인 알림으로 전달합니다."
+          ],
+          bullets: [
+            "MatchCategory별 메모리 내 대기열 관리",
+            "매칭 요청을 동기화해 대기 사용자 중복 등록 방지",
+            "매칭 완료 시 방과 플레이어별 역할·번호 정보 생성",
+            "사용자별 STOMP queue로 매칭 결과 전달"
+          ]
+        },
+        {
+          title: "3. 게임 단계 스케줄링 — 방별 타이머와 오래된 예약 처리",
+          paragraphs: [
+            "채팅, 투표, 재투표처럼 시간이 정해진 단계를 DelayQueue와 단일 worker로 처리했습니다. 단계가 끝나면 방의 상태를 갱신하고 변경 이벤트를 해당 방 topic으로 전송합니다.",
+            "같은 방에 새 단계 예약이 들어오면 기존 예약을 교체하고, 실행 시점에 최신 예약인지 다시 확인해 오래된 작업은 건너뜁니다."
+          ],
+          bullets: [
+            "방 ID별 최신 예약을 추적해 기존 작업 취소",
+            "DelayQueue로 실행 시각이 된 작업만 처리",
+            "오래된 예약 작업은 상태 변경과 메시지 전송 전에 무시",
+            "동률이면 재투표 단계로 전환하고 결과를 방 구독자에게 전달"
+          ],
+          closing: "예약 취소와 실행 시점 검사를 함께 두어, 교체된 타이머가 뒤늦게 실행되어 게임 단계를 덮어쓰지 않도록 했습니다."
+        }
+      ],
+      troubleshooting: {
+        description: "GitHub의 STOMP 라우팅 수정 이력과 방별 비동기 단계 예약 구현을 근거로, 실제 반영된 경로 분리와 오래된 작업 방지 로직을 정리했습니다.",
+        items: [
+          {
+            title: "1. STOMP 사용자 목적지와 단순 브로커 경로를 분리",
+            paragraphs: [
+              "GitHub 수정 이력에 `fix:websocket`으로 남은 변경에서 /user를 단순 메시지 브로커 구독 경로 목록에서 제거하고, 사용자 목적지 prefix 설정으로 분리했습니다.",
+              "현재 설정은 방 브로드캐스트와 queue 구독 경로를 브로커가 처리하고, 사용자 개인 전송은 /user 목적지 변환을 거치도록 구성되어 있습니다."
+            ],
+            subsections: [
+              {
+                title: "정리한 기준",
+                paragraphs: [
+                  "방에 참여한 사용자 전체에게 보내는 이벤트와 특정 사용자에게만 보내는 매칭 결과는 수신 범위가 다릅니다. 두 전달 방식을 같은 prefix 처리에 기대지 않도록 브로커 경로와 사용자 목적지 prefix를 분리했습니다."
+                ],
+                bullets: [
+                  "단순 브로커: /topic, /queue 구독 경로 처리",
+                  "사용자 목적지: /user prefix를 통한 개인 queue 전달",
+                  "매칭 알림은 convertAndSendToUser로 사용자별 전송"
+                ],
+                closing: "수정 이력에 남은 라우팅 변경을 통해 STOMP에서 브로드캐스트와 개인 전달의 목적지 설정을 분리했습니다."
+              }
+            ]
+          },
+          {
+            title: "2. 교체된 게임 타이머가 뒤늦게 실행되지 않도록 방별 최신 예약 확인",
+            paragraphs: [
+              "게임 단계가 바뀔 때 방별 후속 작업을 예약합니다. 새 예약으로 교체된 작업이 큐에 남아 있다가 뒤늦게 실행되면 이미 바뀐 방 상태에 오래된 이벤트를 보낼 수 있어, 예약 교체와 실행 검사를 함께 적용했습니다."
+            ],
+            subsections: [
+              {
+                title: "해결",
+                paragraphs: [
+                  "roomId별 최신 GameRoomTask를 ConcurrentHashMap에 기록하고, 새 작업을 등록할 때 이전 작업을 DelayQueue에서 제거합니다.",
+                  "DelayQueue에서 작업을 꺼낸 뒤에도 roomId의 최신 작업과 일치하는지 확인하고, 교체된 작업이면 상태 처리와 메시지 발송을 건너뜁니다."
+                ],
+                closing: "큐에서 제거하는 단계와 실행 직전 확인을 모두 두어 오래된 예약이 뒤늦게 게임 단계를 바꾸지 않도록 했습니다."
+              }
+            ]
+          }
+        ]
+      },
+      links: { github: "https://github.com/chae-ring/2025_SEASONTHON_TEAM_87_BE" }
     }
   ],
   archiveProjects: [
@@ -669,7 +823,8 @@ window.portfolioData = {
     { type: "WEB APP", title: "버스온단", subtitle: "통학길에 필요한 캠퍼스 버스·지하철 도착 정보를 한눈에 확인하는 서비스", id: "busondan" },
     { type: "PWA", title: "HAB-EAT", subtitle: "AI 음식 인식과 영양 기록으로 건강한 식습관 형성을 돕는 서비스", id: "habeat" },
     { type: "WEB", title: "tikitaka", subtitle: "강의 중 질문과 필기를 연결하고, AI 질문 분류와 유사 질문 탐색으로 수업 참여와 복습을 돕는 학습 플랫폼", id: "tikitaka" },
-    { type: "WEB", title: "프로젝트 우당탕탕", subtitle: "지역의 프로젝트 의뢰부터 참여·운영·기록까지 연결하는 협업 플랫폼", id: "udangtang" }
+    { type: "WEB", title: "프로젝트 우당탕탕", subtitle: "지역의 프로젝트 의뢰부터 참여·운영·기록까지 연결하는 협업 플랫폼", id: "udangtang" },
+    { type: "WEB APP", title: "Bluffing", subtitle: "마피아 게임 규칙을 활용한 세대 간 소통형 실시간 채팅·투표 서비스", id: "bluffing" }
   ],
   contacts: { email: "ycl0514@naver.com", github: "https://github.com/chae-ring", linkedin: "https://www.linkedin.com/", formEndpoint: "https://formsubmit.co/ycl0514@naver.com" }
 };

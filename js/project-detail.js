@@ -31,7 +31,7 @@
   root.innerHTML = `
     <article>
       <section class="project-hero">
-        <div class="project-visual"><img src="${project.image}" alt="${project.title} 프로젝트 대표 이미지" /></div>
+        <div class="project-visual"><img src="${project.detailImage || project.image}" alt="${project.title} 프로젝트 대표 이미지" /></div>
       </section>
       <section class="detail-section project-overview">
         <div>
